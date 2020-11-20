@@ -1,0 +1,76 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div align="center">
+        <div>
+            <div>
+                <h4>Dashboard</h4>
+            </div>
+            <div class="jumbotron mb-0">
+                <div class="panel panel-default">
+                    <div class="panel-body">Card Number:</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">Name:</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">Valid till:</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">Card Type:</div>
+                </div>
+                <div *ngIf="isActivated" class="panel panel-success mb-0">
+                    <div class="panel-heading">Activated</div>
+                    <!-- //<div class="panel-body">Panel Content</div> -->
+                </div>
+
+                <div *ngIf="!isActivated" class="panel panel-info">
+                    <div class="panel-heading">Not Activated</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div *ngIf="isActivated">
+        <div>
+            <p>TOTAL CREDIT:</p>
+            <p>CREDIT USED:</p>
+            <p>REMAINING CREDIT:</p>
+        </div>
+        <div>
+            <div align="center">
+                <h4>PRODUCTS PURCHASED</h4>
+            </div>
+            <p>PRODUCT NAME:</p>
+            <p>PAID:</p>
+            <p>BALANCE:</p>
+            <P>AMOUNT:</P>
+        </div>
+        <div class="container">
+            <div align="center">
+                <h4>RECENT TRANSACTIONS</h4>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="tableCols">
+                        <th>PRODUCT</th>
+                        <th>DATE</th>
+                        <th>AMOUNT PAID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

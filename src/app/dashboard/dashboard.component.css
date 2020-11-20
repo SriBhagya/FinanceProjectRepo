@@ -1,0 +1,19 @@
+.jumbotron {
+    background-color: transparent;
+    /* border: 1px solid grey; */
+    width: 40%;
+    justify-content: left !important;
+    position: relative;
+    text-align: left !important;
+    padding: 0%;
+}
+
+.navbar-nav {
+    float: right;
+    margin-left: auto;
+    font-size: 120%;
+}
+
+.tableCols th {
+    text-align: center;
+}
